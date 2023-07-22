@@ -62,27 +62,27 @@ viewTask() {
 }
 
 updateTask() {
-  String deleteTitle = stdin.readLineSync()!;
-  if (deleteTitle == "0") {
+  String updateTitle = stdin.readLineSync()!;
+  if (updateTitle == "0") {
     tasks.remove(tasks[0]);
     addTask();
-  } else if (deleteTitle == "1") {
+  } else if (updateTitle == "1") {
     tasks.remove(tasks[1]);
     addTask();
-  } else if (deleteTitle == "2") {
+  } else if (updateTitle == "2") {
     tasks.remove(tasks[2]);
     addTask();
-  } else if (deleteTitle == "3") {
+  } else if (updateTitle == "3") {
     tasks.remove(tasks[3]);
     addTask();
-  } else if (deleteTitle == "4") {
+  } else if (updateTitle == "4") {
     tasks.remove(tasks[4]);
     addTask();
-  } else if (deleteTitle == "5") {
+  } else if (updateTitle == "5") {
     tasks.remove(tasks[5]);
     addTask();
   } else {
-    print("you did not update any index of your tasks");
+    print("you did not update tasks");
   }
 }
 
@@ -101,6 +101,6 @@ deleteTask() {
   } else if (deleteTitle == "5") {
     tasks.remove(tasks[5]);
   } else {
-    print("you did not delete any index of your tasks");
+    print("you did not delete tasks");
   }
 }
